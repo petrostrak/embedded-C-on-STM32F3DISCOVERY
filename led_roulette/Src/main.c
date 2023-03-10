@@ -41,7 +41,7 @@ int main(void)
 			for(uint8_t current = 8; current < 16; current++)
 			{
 				uint8_t next = (current + 1) % 8;
-				ledON((uint32_t*)pGPIOEoutput, next);
+				led_on((uint32_t*)pGPIOEoutput, next);
 				delay(2);
 				ledOFF((uint32_t*)pGPIOEoutput, current);
 				delay(2);
@@ -51,7 +51,7 @@ int main(void)
 			for(uint8_t current = 15; current >= 8; current--)
 			{
 				uint8_t next = (current - 1) % 8;
-				ledON((uint32_t*)pGPIOEoutput, next);
+				led_on((uint32_t*)pGPIOEoutput, next);
 				delay(2);
 				ledOFF((uint32_t*)pGPIOEoutput, current);
 				delay(2);

@@ -4,4 +4,4 @@ The program reads the status of the pin PA0. If the status of PA0 is LOW then th
 
 User can change the status of PA0 pin manually by connecting between GND and VDD points of the board.
 
-![](https://github.com/petrostrak/embedded-c-on-stm32f3discovery/blob/main/io_pin_read/io_read_pin.gif)
+![](https://github.com/petrostrak/embedded-systems-in-c/blob/main/io_pin_read/io_pin_read.gif)

@@ -18,11 +18,11 @@
 
 #include <stdint.h>
 
-uint32_t *const pRCC_Register 			= (uint32_t*)0x40021014;
-uint32_t *const pGPIOA_Mode_Register 		= (uint32_t*)0x48000000;
-uint32_t *const pGPIOA_Input_Register 		= (uint32_t*)0x48000010;
-uint32_t *const pGPIOE_Mode_Register 		= (uint32_t*)0x48001000;
-uint32_t *const pGPIOE_Output_Data_Register 	= (uint32_t*)0x48001014;
+uint32_t volatile *const pRCC_Register 					= (uint32_t*)0x40021014;
+uint32_t volatile *const pGPIOA_Mode_Register 			= (uint32_t*)0x48000000;
+uint32_t const volatile *const pGPIOA_Input_Register 	= (uint32_t*)0x48000010;
+uint32_t volatile *const pGPIOE_Mode_Register 			= (uint32_t*)0x48001000;
+uint32_t volatile *const pGPIOE_Output_Data_Register 	= (uint32_t*)0x48001014;
 
 int main(void)
 {
